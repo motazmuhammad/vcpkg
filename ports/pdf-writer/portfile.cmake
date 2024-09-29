@@ -1,10 +1,8 @@
-vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
-
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO galkahana/PDF-Writer
-    REF master
-    SHA512 f9cc60f8c9a8832a111abb4eb80818c1ddc4a5f8bb7954b83964be65b70d92932bb2e034c63c24d8c574d0183aa852b60baf829df12d7e3e6bec81c5d5108c89
+    REF "refs/tags/v${VERSION}"
+    SHA512 5e0f9be1222785066a2cf80e65747e849c3a9c769912155e392b9b63ba2b4ca1ee62ddd9771e090e0ea56b57b8347eb1641f8f551364c7529e1b623080c1ebce
     HEAD_REF master
 )
 
