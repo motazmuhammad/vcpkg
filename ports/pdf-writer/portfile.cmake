@@ -13,14 +13,15 @@ FEATURES
     "nojpeg"                PDFHUMMUS_NO_DCT  
     "notiff"                PDFHUMMUS_NO_TIFF 
     "bundled"               USE_BUNDLED 
+    "unbundledfallbackbundled" USE_UNBUNDLED_FALLBACK_BUNDLED 
     "fuzz"                  BUILD_FUZZING_HARNESS 
 )
 
 vcpkg_cmake_configure(
     SOURCE_PATH ${SOURCE_PATH}
-    # ${FEATURE_OPTIONS}
     OPTIONS    
-    -DUSE_UNBUNDLED_FALLBACK_BUNDLED=TRUE
+    ${FEATURE_OPTIONS}
+
 )
 
 
