@@ -20,6 +20,17 @@
     "nojpeg": { "description": "Excludes Support for JPEG "},
     "notiff": { "description": "Excludes Support for TIFF "},
     "bundled": { "description": "use bundled dependencies"},
+    "unbundledfallbackbundled":
+    {"description": "use unbundled dependencies",
+
+      "dependencies": [
+        "libpng",
+        "libjpeg-turbo",
+        "tiff",
+        "freetype",
+        "zlib"
+      ]
+    },
     "fuzz": { "description": "enables fuzz testing"}
   }
 }

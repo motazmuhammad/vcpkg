@@ -1,7 +1,8 @@
+vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO galkahana/PDF-Writer
-    REF "refs/tags/v${VERSION}"
+    REF "v${VERSION}"
     SHA512 5e0f9be1222785066a2cf80e65747e849c3a9c769912155e392b9b63ba2b4ca1ee62ddd9771e090e0ea56b57b8347eb1641f8f551364c7529e1b623080c1ebce
     HEAD_REF master
 )
@@ -18,7 +19,8 @@ FEATURES
 vcpkg_cmake_configure(
     SOURCE_PATH ${SOURCE_PATH}
     # ${FEATURE_OPTIONS}
-
+    OPTIONS    
+    -DUSE_UNBUNDLED_FALLBACK_BUNDLED=TRUE
 )
 
 
