@@ -1,5 +1,5 @@
 {
-  "name": "openmms",
+  "name": "openms",
   "version": "3.2.0",
   "description": "an open-source software C++ library for LC-MS data management and analyses.",
   "homepage": "https://www.openms.org/",
@@ -13,6 +13,10 @@
     {
       "name": "vcpkg-cmake-config",
       "host": true
+    },
+    {
+      "name":"xerces-c",
+      "host":true
     }
   ]
   
